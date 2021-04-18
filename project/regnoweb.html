@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Web Technology</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            outline:none;
+            text-decoration: none;
+            font-family: 'Ubuntu',sans-serif;
+        }
+        body{
+            background-color: rgb(27, 54, 77);
+        }
+        .regform{
+            max-width: 370px;
+            width: 100%;
+            height: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .regform h1{
+            color: rgb(126, 126, 25);
+            text-align: center;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .regform .form .name{
+            margin-bottom: 10px;
+        }
+        .regform .form .name .input{
+            border:none;
+            padding: 10px;
+            width:100%;
+            background: rgba(0, 0, 1, 0.253);
+            color: #fff;
+        }
+        ::-webkit-input-placeholder{
+            color:#656a6c;
+            text-transform: uppercase;
+        }
+        .regform .form .btn{
+            margin-top: 25px;
+            background-color:  rgb(126, 126, 25);
+            width:100%;
+            padding: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+
+        }
+    
+    </style></head>
+    <body>
+        <div class="regform">
+        <h1>Registration Form</h1>
+        <div class="form">
+            <div class=name>  
+                    <input class="input" type="text" placeholder="Fullname">
+                </div>
+                <div class="name">
+                <input class="input" type="text" placeholder="email">
+                </div>
+                <div class="name">
+                <input class="input" type="text" placeholder="area_code">
+                <input class="input" type="text" placeholder="phone"> 
+                </div>
+                <div class="name">
+                <select class="input" placeholder="Branch">
+                    <option class="input" disabled="disabled" selected="selected">SELECT BRANCH</option>
+                    <option>CSE</option>
+                    <option>IT</option>
+                    <option>AERO</option>
+                    <option>AEROSPACE</option>
+                    <option>ECE</option>
+                </select>
+                </div>
+                <div class="name">
+                <input class="input" type="password" placeholder="password">
+                </div>
+                <button class="btn">Register</button>
+            </form>
+        </div>
+    </body>
+</html>
